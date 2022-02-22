@@ -50,9 +50,17 @@ def create_app():
     except OSError:
         pass
 
+
+
     #Route for Home
     @app.route("/", methods=['GET', 'POST'])
     def index():
         return render_template('index.html')
+
+
+
+    
+
+    
 
     return app
