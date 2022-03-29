@@ -1,5 +1,5 @@
 # SWEN-732_Project
-SWEB-732 Bug Tracking System Project
+SWEN-732 Bug Tracking System Project
 
 Contributors:
 - Abraham Couperus
