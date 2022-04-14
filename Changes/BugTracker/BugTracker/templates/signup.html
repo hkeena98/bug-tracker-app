@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+
+    <title>Registration Form</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            box-sizing: border-box;
+            font-size: 1.4rem;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin: 0;
+        }
+
+        .bg-wrapper {
+            height: 100vh;
+            width: 100%;
+            background: url('../templates/bg.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .form-div {
+            height: 57.6rem;
+            width: 44.3%;
+            background-color: white;
+            position: absolute;
+            padding: 2rem;
+            box-sizing: inherit;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .image-area {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        .image-area img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .form-area {
+            height: 100%;
+            width: 50%;
+            padding: 4.5rem;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .form-area h3 {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2.8rem;
+            position: relative;
+        }
+
+        .field-div-1,
+        .field-divs {
+            height: 3rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .field-div-1 input {
+            padding: .3rem 0;
+            width: 46%;
+            display: block;
+            margin-right: 2.5rem;
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            border: 0;
+            border-bottom: .1rem solid black;
+            box-sizing: inherit;
+            float: left;
+        }
+
+        .field-div-1 input:last-child {
+            margin-right: 0;
+        }
+
+        .field-divs input {
+            padding: .3rem 0;
+            width: 100%;
+            display: block;
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            border: 0;
+            border-bottom: .1rem solid black;
+            box-sizing: inherit;
+            float: left;
+        }
+
+        .form-area label {
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter;
+            color: #707070;
+            display: block;
+        }
+
+        .form-area p {
+            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter;
+            color: #707070;
+            margin-left: .5rem;
+            display: inline;
+        }
+
+        #cb {
+            margin-top: .5rem;
+            margin-bottom: 2.5rem;
+            padding: 1rem 0;
+        }
+
+        #cb:nth-of-type(2) {
+            margin-left: 4rem;
+        }
+
+        #button {
+            width: 16.4rem;
+            height: 5.1rem;
+            margin: auto;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-wrapper">
+        <div class="form-div">
+            <div class="image-area">
+                <img src="../templates/body.jpg" alt="">
+            </div>
+
+            <div class="form-area">
+                <h3>Registration Form</h3>
+                <div class="field-div-1">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <div class="field-divs">
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div class="field-divs">
+                    <input type="text" placeholder="Email Address">
+                </div>
+
+                <div class="field-divs">
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <div class="field-divs">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+
+                <a href="{{ url_for('login_page') }}" id="button">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
