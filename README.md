@@ -1,4 +1,4 @@
-# SWEN-732_Project
+# SWEN-732 Project
 SWEN-732 Bug Tracking System Project
 
 Contributors:
