@@ -5,6 +5,9 @@ Release:
 Description: 
 """
 
+#time import
+import time
+
 #Imports Flask Libraries
 from re import template
 from flask import Flask, render_template, request, session, jsonify, redirect, url_for
@@ -57,8 +60,10 @@ def create_app():
     def index():
         return render_template('index.html')
 
-
-
+    #route for time test
+    @app.route('/time')
+    def get_current_time():
+        return {'time': time.time()}
     
 
     
